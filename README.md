@@ -1,5 +1,6 @@
 # Bart Challange
 
+Faça um _fork_ desse projeto.
 
 Seu desafio é contruir um displayer numérico.
 Este método deve receber um numero inteiro e devolver em formato
@@ -31,6 +32,8 @@ Fique a vontade para mostrar o resultado no console.
 Fique a vontade para criar qualquer classe, interface ou enum que precisar.
 Faça novos testes.
 Quanto mais OO melhor.
+
+Ao finalizar, envie o link do seu repositório para eduardo@bartdigital.com.br
 
 Divirta-se.
  
