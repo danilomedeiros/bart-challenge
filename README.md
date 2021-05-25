@@ -2,7 +2,7 @@
 
 Faça um _fork_ desse projeto.
 
-Seu desafio é contruir um displayer numérico que deve receber um numero inteiro e devolver em formato de display de sete segmentos.
+Seu desafio é construir um displayer numérico que deve receber um numero inteiro e devolver em formato de display de sete segmentos.
 
 Exemplos:
 
