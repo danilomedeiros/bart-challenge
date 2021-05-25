@@ -8,14 +8,23 @@ de display de sete segmentos.
 Um exemplo.
 
 Ao receber o número 0, o display deve mostrar 
+
+```
  _
 | |
 |_|
 
+```
+
 Ao receber o número 123, o display deve mostrar.
+   
+```   
    _  _
 |  _| _|
 | |_  _|
+
+```
+
 
 O display deve funcionar para qualquer sequencia numérica.
 Fique a vontade para mostrar o resultado no console.
