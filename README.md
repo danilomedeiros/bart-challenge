@@ -33,6 +33,8 @@ Quanto mais OO melhor.
 
 Ao finalizar, envie o link do seu repositório para eduardo@bartdigital.com.br.
 
+Você tem 48 horas para concluir esse desafio.
+
 Observação: A classe Displayer já foi criada.
 
 Divirta-se.
