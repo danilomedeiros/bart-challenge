@@ -2,11 +2,9 @@
 
 Faça um _fork_ desse projeto.
 
-Seu desafio é contruir um displayer numérico.
-Este método deve receber um numero inteiro e devolver em formato
-de display de sete segmentos.
+Seu desafio é contruir um displayer numérico que deve receber um numero inteiro e devolver em formato de display de sete segmentos.
 
-Um exemplo.
+Exemplos:
 
 Ao receber o número 0, o display deve mostrar 
 
@@ -33,7 +31,9 @@ Fique a vontade para criar qualquer classe, interface ou enum que precisar.
 Faça novos testes.
 Quanto mais OO melhor.
 
-Ao finalizar, envie o link do seu repositório para eduardo@bartdigital.com.br
+Ao finalizar, envie o link do seu repositório para eduardo@bartdigital.com.br.
+
+Observação: A classe Displayer já foi criada.
 
 Divirta-se.
  
