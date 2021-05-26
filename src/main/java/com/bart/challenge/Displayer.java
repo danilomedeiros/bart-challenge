@@ -1,4 +1,4 @@
-package com.bart.challange;
+package com.bart.challenge;
 
 public class Displayer {
 	

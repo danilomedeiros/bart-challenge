@@ -8,11 +8,11 @@
 		<version>2.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bart.challange</groupId>
-	<artifactId>bartchallange</artifactId>
+	<groupId>com.bart.challenge</groupId>
+	<artifactId>bartchallenge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bartDigitalChallange</name>
-	<description>Bart Digital Challange</description>
+	<name>bartDigitalChallenge</name>
+	<description>Bart Digital Challenge</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
