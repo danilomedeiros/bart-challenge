@@ -1,5 +1,7 @@
 # Bart Challenge
 
+Lembre-se, queremos avaliar como você estrutura o código, como você pensa de forma orientada a objeto! :)
+
 Faça um _fork_ desse projeto.
 
 Seu desafio é construir um displayer numérico que deve receber um numero inteiro e devolver em formato de display de sete segmentos.
