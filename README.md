@@ -18,9 +18,9 @@ Ao receber o número 0, o display deve mostrar
 Ao receber o número 123, o display deve mostrar.
    
 ```   
-   _  _
-|  _| _|
-| |_  _|
+    _  _
+  | _| _|
+  ||_  _|
 
 ```
 
@@ -29,7 +29,7 @@ O display deve funcionar para qualquer sequencia numérica.
 Fique a vontade para mostrar o resultado no console.
 Fique a vontade para criar qualquer classe, interface ou enum que precisar.
 Faça novos testes.
-Quanto mais OO melhor.
+Quanto mais Orientado a Objetos melhor.
 
 Ao finalizar, envie o link do seu repositório para eduardo@bartdigital.com.br.
 
