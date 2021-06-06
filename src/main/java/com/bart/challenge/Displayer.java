@@ -1,37 +1,30 @@
 package com.bart.challenge;
 
-public class Displayer {
-	
-	public String display(Integer source) {
-		// TODO: write your code here.
-		
-		/**
-		 * Seu desafio é contruir um displayer numérico.
-		 * Este método deve receber um numero inteiro e devolver em formato
-		 * de display de sete segmentos.
-		 * 
-		 * Um exemplo.
-		 * 
-		 * Ao receber o número 0, o display deve mostrar 
-		 *  _
-		 * | |
-		 * |_|
-		 * 
-		 * Ao receber o número 123, o display deve mostrar.
-		 *    _  _
-		 * |  _| _|
-		 * | |_  _|
-		 * 
-		 * O display deve funcionar para qualquer sequencia numérica.
-		 * Fique a vontade para mostrar o resultado no console.
-		 * Fique a vontade para criar qualquer classe, interface ou enum que precisar.
-		 * Faça novos testes.
-		 * Quanto mais OO melhor.
-		 * 
-		 * Divirta-se.
-		 */
-		
-		return null;
-	}
+import java.util.HashMap;
+import java.util.Map;
 
+public class Displayer {
+
+	
+	public String display(Number source) {
+		String source_str = String.valueOf(source);
+		Map<Character, Symbol> hashMap = new HashMap<Character, Symbol>();
+		for(Symbol s : Digit.values()) {
+			hashMap.put(s.getKey(), s);
+		}
+		char[] charArray = source_str.toCharArray();
+		StringBuilder top = new StringBuilder();
+		StringBuilder middle = new StringBuilder();
+		StringBuilder botton = new StringBuilder();		
+		for (char c : charArray) {
+			Symbol symbol = hashMap.get(c);
+			top.append(symbol.getTop());
+			middle.append(symbol.getMiddle());
+			botton.append(symbol.getBottom());
+		}
+		String result = top.toString()+"\n"+middle.toString()+"\n"+botton.toString()+"\n";
+		System.out.println(result);
+		return result;
+		
+	}
 }
