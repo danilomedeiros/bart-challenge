@@ -1,37 +1,44 @@
 package com.bart.challenge;
 
-public class Displayer {
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Displayer implements DisplayerFacade {
 	
-	public String display(Integer source) {
-		// TODO: write your code here.
-		
-		/**
-		 * Seu desafio é contruir um displayer numérico.
-		 * Este método deve receber um numero inteiro e devolver em formato
-		 * de display de sete segmentos.
-		 * 
-		 * Um exemplo.
-		 * 
-		 * Ao receber o número 0, o display deve mostrar 
-		 *  _
-		 * | |
-		 * |_|
-		 * 
-		 * Ao receber o número 123, o display deve mostrar.
-		 *    _  _
-		 * |  _| _|
-		 * | |_  _|
-		 * 
-		 * O display deve funcionar para qualquer sequencia numérica.
-		 * Fique a vontade para mostrar o resultado no console.
-		 * Fique a vontade para criar qualquer classe, interface ou enum que precisar.
-		 * Faça novos testes.
-		 * Quanto mais OO melhor.
-		 * 
-		 * Divirta-se.
-		 */
-		
-		return null;
+	
+	Map<Class<?>, TypeDisplayer<?>> strategies;
+
+	private synchronized void init() {
+		if(strategies == null) {
+			strategies = new HashMap<Class<?>,TypeDisplayer<?>>();
+		}
+		strategies.put(Number.class, new NumberDisplay());
+		strategies.put(Date.class, new DateDisplay());
+		strategies.put(Calendar.class, new CalendarDisplay());
+	}
+	
+	@Override
+	public String display(Number s) {
+		init();
+		NumberDisplay typeDisplayer = (NumberDisplay) this.strategies.get(Number.class);
+		return typeDisplayer.display(s);
 	}
 
+	@Override
+	public String display(Calendar s) {
+		init();
+		CalendarDisplay displayer = (CalendarDisplay) this.strategies.get(Calendar.class);
+		return displayer.display(s);
+	}
+
+	@Override
+	public String display(Date s) {
+		init();
+		DateDisplay typeDisplayer = (DateDisplay) this.strategies.get(Date.class);
+		return typeDisplayer.display(s);
+	}
+
+	
 }
